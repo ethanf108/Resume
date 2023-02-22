@@ -1,0 +1,142 @@
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+\documentclass[10pt,letterpaper]{altacv}
+
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{lato}
+
+\definecolor{Mulberry}{HTML}{72243D}
+%\definecolor{Mulberry}{HTML}{17b50e} %subtext color
+\definecolor{SlateGrey}{HTML}{555555}
+\definecolor{LightGrey}{HTML}{666666} %subtext color 2
+\colorlet{heading}{Sepia}
+\colorlet{accent}{Mulberry}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\addbibresource{sample.bib}
+
+\usepackage{hyperref}
+
+\begin{document}
+
+\name{Ethan Ferguson}
+\tagline{}
+\photo{6cm}{}
+\personalinfo{%
+  \begin{flushright}
+    \normalsize
+    \github{\href{https://github.com/ethanf108}{ethanf108}}
+    \linkedin{\href{https://linkedin.com/in/ethanf108}{ethanf108}}
+    \printinfo{\faPhone}{(310) 989-7483}
+    \email{\href{mailto:ethanf108@gmail.com}{ethanf108@gmail.com}}
+  \end{flushright}
+}
+
+\begin{adjustwidth}{}{-8cm}
+\makecvheader
+\end{adjustwidth}
+
+\cvsection[page1sidebar]{Experience}
+
+\cvexperience
+        {\href
+                {https://www.aero.org/}
+                {The Aerospace Corp.}}
+        {Software Engineer Intern II, Cloud Systems Engineer}
+        {
+                DESC
+        }
+        {May 2022 -- December 2022}
+
+\divider
+
+\cvexperience
+        {\href
+                {https://www.witr.rit.edu/}
+                {WITR Henrietta 89.7FM}}
+        {Internal Developer}
+        {
+                DESC
+        }
+        {November 2021 -- May 2022}
+
+\divider
+
+\cvexperience
+        {\href
+                {https://www.evconnect.com/}
+                {EV Connect Inc.}}
+        {Software Engineer Intern}
+        {
+                DESC
+        }
+        {May 2021 - August 2021}
+
+\medskip
+
+\cvsection{Projects}
+
+\cvproject
+        {CSH Pings}
+        {\href
+                {https://github.com/ethanf108/csh-pings}
+                {github.com/ethanf108/csh-pings}}
+        {
+                DESC
+        }
+        {Java, Spring Boot, React, MariaDB, Openshift Kubernetes, LDAP, Keycloak}
+
+\divider
+
+\cvproject
+        {Intraspect}
+        {\href
+                {https://github.com/ethanf108/Intraspect}
+                {github.com/ethanf108/Intraspect}}
+        {
+                Created a library to read, analyze, and manipulate \textbf{Java class files}
+        }
+        {Java, JVM Assembly, JVM Bytecode}
+
+\divider
+
+\cvproject
+        {Clobber}
+        {\href
+                {https://github.com/ethanf108.clobber}
+                {github.com/ethanf108/clobber}}
+        {
+                Created a \textbf{Systemd service} that monitors GPUs on a machine,
+                allows users to queue \textbf{Docker Containers} as GPU jobs,
+                schedules jobs based off of the GPUs they request,
+                and kills any other processes using the GPUs.
+                Integrated with CLI to allow users to interact with the \textbf{Clobber Daemon}
+                through a \textbf{Unix Socket}.
+        }
+        {Rust, NVML, Systemd, Unix Sockets, Podman, Docker}
+
+\divider
+
+\cvproject
+        {TftPlug}
+        {\href
+                {https://github.com/ethanf108/tftplug}
+                {github.com/ethanf108/tftplug}}
+        {
+                DESC                
+        }
+        {Java, GNU/Linux, TFTP}
+
+\medskip
+
+
+\clearpage
+
+\end{document}
