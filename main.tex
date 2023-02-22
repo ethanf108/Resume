@@ -29,10 +29,11 @@
 \name{Ethan Ferguson}
 \tagline{}
 \photo{6cm}{}
-\personalinfo{%
+\personalinfo{
   \begin{flushright}
     \normalsize
     \github{\href{https://github.com/ethanf108}{ethanf108}}
+    \\
     \linkedin{\href{https://linkedin.com/in/ethanf108}{ethanf108}}
     \printinfo{\faPhone}{(310) 989-7483}
     \email{\href{mailto:ethanf108@gmail.com}{ethanf108@gmail.com}}
@@ -51,7 +52,12 @@
                 {The Aerospace Corp.}}
         {Software Engineer Intern II, Cloud Systems Engineer}
         {
-                DESC
+                Developed Star Tracker in \textbf{Scheme} from peer-reviewed documents,
+                consolidated \textbf{SSL} certificates into \textbf{Kubernetes} secrets,
+                used \textbf{Helm} to deploy a \textbf{Kafka} cluster,
+                and worked in a large team to create \textbf{React} components to
+                handle CRUD operations for a \textbf{Spring Boot} backend and
+                \textbf{MongoDB} database.
         }
         {May 2022 -- December 2022}
 
@@ -60,10 +66,14 @@
 \cvexperience
         {\href
                 {https://www.witr.rit.edu/}
-                {WITR Henrietta 89.7FM}}
+                {WITR Henrietta 89.7 FM}}
         {Internal Developer}
         {
-                DESC
+                Created a \textbf{Spring Boot}, \textbf{React}, and \textbf{PostgresQL}
+                full-stack application for both public and member-only use, restructured
+                web streaming service to allow for internet streaming of
+                on-air content, and deployed both applications on RIT's internal
+                cloud service.
         }
         {November 2021 -- May 2022}
 
@@ -75,7 +85,11 @@
                 {EV Connect Inc.}}
         {Software Engineer Intern}
         {
-                DESC
+                Ensured the reliability of the EV member portal by creating UI tests
+                in \textbf{JavaScript} with \textbf{Jest}, created web-scraping and
+                data-transformation scripts in \textbf{Java} to convert website data
+                into \textbf{Excel} documents, and contributed to the common testing
+                framework used by the EV Connect QA team.
         }
         {May 2021 - August 2021}
 
@@ -89,9 +103,15 @@
                 {https://github.com/ethanf108/csh-pings}
                 {github.com/ethanf108/csh-pings}}
         {
-                DESC
+                Created full-stack application in \textbf{Spring Boot}, \textbf{React},
+                and \textbf{MariaDB} that centralizes notification processing and dispatch
+                for all CSH services through a public \textbf{REST API}, and allows
+                CSH members to configure applications and notification services.
+                Interfaces with \textbf{Keycloak} and \textbf{LDAP}, and APIs for services
+                such as \textbf{Slack}, \textbf{Telegram}, \textbf{Discord}, and is deployed
+                on \textbf{Openshift Kubernetes}. Pull Requests from CSH members are encouraged.
         }
-        {Java, Spring Boot, React, MariaDB, Openshift Kubernetes, LDAP, Keycloak}
+        {\cvtag{Java}\cvtag{Spring}\cvtag{React}\cvtag{MariaDB}\cvtag{OKD Kubernetes}\cvtag{LDAP}\cvtag{Keycloak}}
 
 \divider
 
@@ -101,9 +121,12 @@
                 {https://github.com/ethanf108/Intraspect}
                 {github.com/ethanf108/Intraspect}}
         {
-                Created a library to read, analyze, and manipulate \textbf{Java class files}
+                Created a library to read, analyze, and manipulate \textbf{Java class files},
+                designed a \textbf{CLI} to allow users to quickly dissassemble \textbf{.class}
+                files, and leveraged \textbf{Git} to allow for multiple features to be
+                developed concurrently between me and my project partner.
         }
-        {Java, JVM Assembly, JVM Bytecode}
+        {\cvtag{Java}\cvtag{JVM Assembly}\cvtag{JVM Bytecode}}
 
 \divider
 
@@ -113,26 +136,33 @@
                 {https://github.com/ethanf108.clobber}
                 {github.com/ethanf108/clobber}}
         {
-                Created a \textbf{Systemd service} that monitors GPUs on a machine,
+                Created a \textbf{Systemd service} that monitors GPUs,
                 allows users to queue \textbf{Docker Containers} as GPU jobs,
                 schedules jobs based off of the GPUs they request,
                 and kills any other processes using the GPUs.
                 Integrated with CLI to allow users to interact with the \textbf{Clobber Daemon}
-                through a \textbf{Unix Socket}.
+                through a \textbf{Unix Socket}, and view the status of their queued jobs.
         }
-        {Rust, NVML, Systemd, Unix Sockets, Podman, Docker}
+        {\cvtag{Rust}\cvtag{NVML}\cvtag{Systemd}\cvtag{Unix Sockets}\cvtag{Podman}\cvtag{Docker}}
 
 \divider
 
 \cvproject
-        {TftPlug}
+        {Tft Plug}
         {\href
                 {https://github.com/ethanf108/tftplug}
                 {github.com/ethanf108/tftplug}}
         {
-                DESC                
+                Created a \textbf{Systemd service} that hosts a \textbf{TFTP} server
+                on a \textbf{Proxmox} VM for serving multiple \textbf{Linux} distros
+                for PXE-booting new servers over the network.
+                \textbf{DHCP} options also had to be configured, so older machines
+                who do not support the newer \textbf{iPXE} standard can find the
+                \textbf{IP} address of the server.
+                Also integrates with Plug, the CSH local advertisement service,
+                to display images as the background of the distro-selection screen.
         }
-        {Java, GNU/Linux, TFTP}
+        {\cvtag{Java}\cvtag{GNU/Linux}\cvtag{TFTP}\cvtag{PXE Boot}}
 
 \medskip
 
@@ -140,3 +170,4 @@
 \clearpage
 
 \end{document}
+
